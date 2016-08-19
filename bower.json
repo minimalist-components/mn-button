@@ -1,0 +1,10 @@
+{
+  "name": "xp-buttons",
+  "description": "",
+  "main": "sources/styles/app.scss",
+  "authors": [
+    "Darlan Mendonça <darlanmendonca@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": ""
+}

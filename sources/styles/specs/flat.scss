@@ -1,0 +1,8 @@
+.xp-button.xp-flat {
+  border: 1px solid black;
+
+  &:hover, &:focus {
+    background-color: black;
+    color: white;
+  }
+}

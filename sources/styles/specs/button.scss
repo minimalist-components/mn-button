@@ -1,0 +1,18 @@
+.xp-button {
+  display: inline-block;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  cursor: pointer;
+  padding: .4rem;
+  background: none;
+  box-sizing: border-box;
+  font-size: 1em;
+  font-family: inherit;
+  color: inherit;
+  transition: background-color .2s ease, color .2s ease;
+
+  &:hover, &:focus {
+    background-color: #ddd;
+  }
+}
