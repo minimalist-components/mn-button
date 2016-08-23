@@ -24,6 +24,7 @@
 
   &[disabled='true'], &[disabled] {
     background-color: map-get($blue-grey, 50);
+    box-shadow: none;
     color: map-get($blue-grey, 200);
     pointer-events: none;
   }
