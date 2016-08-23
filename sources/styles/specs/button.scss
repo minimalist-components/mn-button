@@ -23,7 +23,7 @@
     background-color: map-get($blue-grey, 100);
   }
 
-  &[disabled='true'], &[disabled] {
+  &:disabled {
     background-color: map-get($blue-grey, 50);
     box-shadow: none;
     color: map-get($blue-grey, 200);
