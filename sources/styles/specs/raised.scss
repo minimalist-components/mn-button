@@ -1,10 +1,16 @@
 .xp-button.xp-raised {
-  border-color: map-get($pink, 700);
-  background-color: map-get($pink, 400);
+  border: 1px solid;
+  border-color: map-get($deep-purple, 700);
+  background-color: map-get($deep-purple, 400);
   color: white;
 
   &:hover, &:focus {
-    background-color: map-get($pink, 400);
-    box-shadow: 0 0 0 2px map-get($pink, 700);
+    background-color: map-get($deep-purple, 400);
+    box-shadow: 0 0 0 2px map-get($deep-purple, 700);
+  }
+
+  &[disabled='true'], &[disabled] {
+    background-color: map-get($deep-purple, 200);
+    border-color: map-get($deep-purple, 300);
   }
 }
