@@ -11,6 +11,6 @@
 
   &[disabled='true'], &[disabled] {
     background-color: map-get($deep-purple, 200);
-    border-color: map-get($deep-purple, 300);
+    border-color: map-get($deep-purple, 200);
   }
 }
