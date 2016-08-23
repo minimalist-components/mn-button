@@ -1,17 +1,8 @@
 .xp-raised {
-  border: 1px solid;
-  border-color: map-get($deep-purple, 700);
-  background-color: map-get($deep-purple, 400);
-  color: $white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0);
 
   &:hover, &:focus {
-    background-color: map-get($deep-purple, 400);
-    box-shadow: 0 0 0 2px map-get($deep-purple, 700);
-  }
-
-  &[disabled='true'], &[disabled] {
-    background-color: map-get($deep-purple, 200);
-    color: $white;
-    border-color: map-get($deep-purple, 200);
+    background-color: $white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .4);
   }
 }
