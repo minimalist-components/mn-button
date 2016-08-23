@@ -1,4 +1,4 @@
-.xp-button.xp-raised {
+.xp-raised {
   border: 1px solid;
   border-color: map-get($deep-purple, 700);
   background-color: map-get($deep-purple, 400);
@@ -11,6 +11,7 @@
 
   &[disabled='true'], &[disabled] {
     background-color: map-get($deep-purple, 200);
+    color: white;
     border-color: map-get($deep-purple, 200);
   }
 }
