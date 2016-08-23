@@ -12,6 +12,8 @@
   margin: .1rem;
   transition: all .2s ease;
   user-select: none;
+  line-height: 2em;
+  padding: 0 .8em;
 
   border: 0;
   color: map-get($blue-grey, 900);
