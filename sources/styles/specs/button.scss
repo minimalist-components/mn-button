@@ -1,6 +1,11 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
 .xp-button {
   display: inline-block;
-  border: 0;
   outline: 0;
   text-decoration: none;
   cursor: pointer;
@@ -9,10 +14,16 @@
   box-sizing: border-box;
   font-size: 1em;
   font-family: inherit;
-  color: inherit;
-  transition: background-color .2s ease, color .2s ease;
+  border-radius: 3px;
+  margin: .1rem;
+  transition: all .2s ease;
+  -webkit-user-select: none;
+
+  border: 1px solid map-get($blue-grey, 200);
+  color: map-get($blue-grey, 900);
 
   &:hover, &:focus {
-    background-color: #ddd;
+    background-color: map-get($blue-grey, 100);
+    box-shadow: 0 0 0 2px map-get($blue-grey, 200);
   }
 }

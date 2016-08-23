@@ -19,5 +19,6 @@ module.exports = {
     notify: false,
     middleware: [require('connect-history-api-fallback')()],
     reloadDelay: 100,
+    open: false,
   },
 };

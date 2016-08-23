@@ -1,3 +1,10 @@
 .xp-button.xp-raised {
+  border-color: map-get($pink, 700);
+  background-color: map-get($pink, 400);
+  color: white;
 
+  &:hover, &:focus {
+    background-color: map-get($pink, 400);
+    box-shadow: 0 0 0 2px map-get($pink, 700);
+  }
 }
