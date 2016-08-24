@@ -19,13 +19,13 @@
   color: inherit;
 
   &:hover, &:focus {
-    background-color: map-get($blue-grey, 100);
+    background-color: map-get($blue-grey, 200);
   }
 
   &:disabled {
-    background-color: map-get($blue-grey, 50);
+    background-color: map-get($blue-grey, 100);
     box-shadow: none;
-    color: map-get($blue-grey, 200);
+    color: map-get($blue-grey, 300);
     pointer-events: none;
   }
 }

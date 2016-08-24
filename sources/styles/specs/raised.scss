@@ -1,8 +1,8 @@
 .button.raised {
-  box-shadow: 0 0 0 0 map-get($blue-grey, 300);
+  box-shadow: 0 0 0 0 map-get($blue-grey, 400);
 
   &:hover, &:focus {
     background-color: transparent;
-    box-shadow: 0 1px 3px 0 map-get($blue-grey, 300);
+    box-shadow: 0 1px 3px 0 map-get($blue-grey, 400);
   }
 }
