@@ -15,9 +15,8 @@
   user-select: none;
   line-height: 2.5em;
   padding: 0 .8em;
-
   border: 0;
-  color: map-get($blue-grey, 900);
+  color: inherit;
 
   &:hover, &:focus {
     background-color: map-get($blue-grey, 100);
