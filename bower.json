@@ -1,7 +1,10 @@
 {
   "name": "xp-buttons",
   "description": "",
-  "main": "sources/styles/app.scss",
+  "main": [
+    "dist/app.css",
+    "dist/app.js",
+  ],
   "authors": [
     "Darlan Mendonça <darlanmendonca@gmail.com>"
   ],
