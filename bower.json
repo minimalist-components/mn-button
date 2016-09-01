@@ -1,6 +1,7 @@
 {
-  "name": "xp-buttons",
-  "description": "",
+  "name": "mn-buttons",
+  "version": "0.0.1",
+  "description": "Minimalist button component, with just 1kb of css",
   "main": [
     "dist/app.css",
     "dist/app.js",
