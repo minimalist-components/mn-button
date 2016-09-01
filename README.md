@@ -34,8 +34,8 @@ And then, in your html, you can use the class ```.mn-button``` in buttons or anc
 
 You can use the class .mn-button with others class, .raised, and .action.
 
-.raised - to make a button with 3d depth
-.action - to make rounded buttons, with an icon replacement the text
+- .raised - to make a button with 3d depth
+- .action - to make rounded buttons, with an icon replacement the text
 
 Raised button example
 
