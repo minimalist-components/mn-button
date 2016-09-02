@@ -2,7 +2,6 @@
   box-shadow: 0 0 0 0 map-get($grey, 400);
 
   &:hover, &:focus {
-    background-color: transparent;
     box-shadow: 0 1px 3px 0 map-get($grey, 400);
   }
 }
