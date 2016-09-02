@@ -2,7 +2,7 @@
   "name": "mn-button",
   "version": "1.0.0",
   "description": "Minimalist button component, with just 1kb of css",
-  "main": "dist/app.css",
+  "main": "dist/mn-button.css",
   "authors": [
     "Darlan Mendonça <darlanmendonca@gmail.com>"
   ],

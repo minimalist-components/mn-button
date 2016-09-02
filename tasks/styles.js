@@ -3,6 +3,7 @@
 let gulp = require('gulp');
 let config = require('./gulp.config.js');
 let sass = require('gulp-sass');
+let rename = require('gulp-rename');
 let sourcemaps = require('gulp-sourcemaps');
 let autoprefixer = require('gulp-autoprefixer');
 let browserSync = config.browserSync;
@@ -19,6 +20,7 @@ function stylesTask() {
     .pipe(sourcemaps.init())
     .pipe(sass({outputStyle}))
     .pipe(autoprefixer())
+    .pipe(rename('mn-button.css'))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(config.styles.dest))
     .pipe(browserSync.stream({match: '**/*.css'}));
