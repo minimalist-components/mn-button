@@ -1,4 +1,4 @@
-# Minimalist buttons
+# Minimalist button
 
 Buttons flat, raised, and action, with a minimalist design.
 
@@ -12,7 +12,7 @@ See the [demo](https://codepen.io/darlanmendonca/pen/vKqLOx)
 With bower
 
 ```sh
-bower install --save mn-buttons
+bower install --save mn-button
 ```
 
 Or just download the main file ```dist/app.css``` in your project, and make a reference to their, like:
