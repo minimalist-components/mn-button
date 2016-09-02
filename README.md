@@ -15,10 +15,10 @@ With bower
 bower install --save mn-button
 ```
 
-Or just download the main file ```dist/app.css``` in your project, and make a reference to their, like:
+Or just download the main file ```dist/mn-input.css``` in your project, and make a reference to their, like:
 
 ```html
-<link rel="stylesheet" href="path/to/app.css" />
+<link rel="stylesheet" href="path/to/mn-input.css" />
 ```
 
 
