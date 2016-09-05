@@ -18,7 +18,7 @@ bower install --save mn-button
 Or just download the main file ```dist/mn-button.css``` in your project, and make a reference to their, like:
 
 ```html
-<link rel="stylesheet" href="path/to/mn-button.css">
+<link rel="stylesheet" href="path/to/dist/mn-button.css">
 ```
 
 
