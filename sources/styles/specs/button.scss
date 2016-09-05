@@ -19,13 +19,13 @@
   color: inherit;
 
   &:hover:not(.raised), &:focus:not(.raised) {
-    background-color: map-get($grey, 200);
+    background-color: map-get($mn-accent-color, 200);
   }
 
   &:disabled {
-    background-color: map-get($grey, 100);
+    background-color: map-get($mn-primary-color, 100);
     box-shadow: none;
-    color: map-get($grey, 300);
+    color: map-get($mn-primary-color, 300);
     pointer-events: none;
   }
 }
