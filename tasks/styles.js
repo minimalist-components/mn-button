@@ -6,10 +6,30 @@ let sass = require('gulp-sass');
 let rename = require('gulp-rename');
 let sourcemaps = require('gulp-sourcemaps');
 let autoprefixer = require('gulp-autoprefixer');
+let inject = require('gulp-inject');
+let bower = require('bower-files')();
+let path = require('path');
 let browserSync = config.browserSync;
 let plumber = require('gulp-plumber');
 
+
+let dependencies = bower
+  .relative(path.join(__dirname, '..'))
+  .ext('scss')
+  .files;
+
 let outputStyle = 'compressed';
+
+let injectTransform = {
+  starttag: '/* inject:imports */',
+  endtag: '/* endinject */',
+  transform: filepath => require('util').format('@import \'../..%s\';', filepath),
+};
+
+let injectConfig = {
+  read: false,
+  relative: false,
+};
 
 gulp.task('styles', stylesTask);
 
@@ -17,6 +37,7 @@ function stylesTask() {
   gulp
     .src(config.styles.src)
     .pipe(plumber({errorHandler}))
+    .pipe(inject(gulp.src(dependencies, injectConfig), injectTransform))
     .pipe(sourcemaps.init())
     .pipe(sass({outputStyle}))
     .pipe(autoprefixer())

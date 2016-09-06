@@ -10,10 +10,12 @@
   "author": "Darlan Mendonça <darlanmendonca@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "bower-files": "^3.13.3",
     "browser-sync": "^2.14.0",
     "connect-history-api-fallback": "^1.3.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
+    "gulp-inject": "1.5.0",
     "gulp-jade": "^1.1.0",
     "gulp-plumber": "^1.1.0",
     "gulp-rename": "^1.2.2",

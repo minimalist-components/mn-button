@@ -10,5 +10,8 @@
     "Darlan Mendonça <darlanmendonca@gmail.com>"
   ],
   "license": "MIT",
-  "homepage": ""
+  "homepage": "",
+  "dependencies": {
+    "mn-palette-color": "^0.0.1"
+  }
 }
