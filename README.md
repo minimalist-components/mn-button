@@ -4,7 +4,7 @@ Buttons flat, raised, and action, with a minimalist design.
 
 And just 1kb of css. (half of it is gzipped).
 
-See the [demo](https://codepen.io/darlanmendonca/pen/vKqLOx)
+See the [demo](https://codepen.io/darlanmendonca/full/vKqLOx)
 
 
 ### Install
@@ -18,7 +18,7 @@ bower install --save mn-button
 Or just download the main file ```dist/mn-button.css``` in your project, and make a reference to their, like:
 
 ```html
-<link rel="stylesheet" href="path/to/mn-button.css">
+<link rel="stylesheet" href="path/to/dist/mn-button.css">
 ```
 
 
