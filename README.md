@@ -6,7 +6,9 @@ And just 1kb of css. (half of it is gzipped).
 
 See the [demo](https://codepen.io/darlanmendonca/full/vKqLOx)
 
-[![https://raw.githubusercontent.com/minimalist-components/mn-button/master/preview.gif]](https://codepen.io/darlanmendonca/full/vKqLOx)
+<a href="http://codepen.io/darlanmendonca/full/vKqLOx">
+<img src="https://raw.githubusercontent.com/minimalist-components/mn-button/master/preview.gif">
+</a>
 
 
 ### Install
