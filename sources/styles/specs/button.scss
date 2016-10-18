@@ -17,6 +17,8 @@ mn-button, .mn-button {
   padding: 0 .8em;
   border: 0;
   color: inherit;
+  position: relative;
+  transform: translateZ(0);
 
   &:hover:not(.raised), &:focus:not(.raised) {
     background-color: map-get($mn-primary-color, 200);

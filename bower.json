@@ -1,6 +1,6 @@
 {
   "name": "mn-button",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Minimalist button component, with just 1kb of css",
   "main": [
     "dist/mn-button.css",
@@ -12,7 +12,6 @@
   "license": "MIT",
   "homepage": "",
   "dependencies": {
-    "mn-palette-color": "^0.0.1",
-    "document-register-element": "^1.2.0"
+    "mn-palette-color": "^0.0.1"
   }
 }

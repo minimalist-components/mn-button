@@ -1,9 +1,15 @@
 mn-button, .mn-button {
+  margin: .4em;
+
   &.raised {
-    box-shadow: 0 0 0 0 map-get($mn-black-color, 400);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
 
     &:hover, &:focus {
-      box-shadow: 0 1px 3px 0 map-get($mn-primary-color, 400);
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,.4);
+    }
+
+    &:disabled {
+      box-shadow: none;
     }
   }
 }
