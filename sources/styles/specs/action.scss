@@ -1,30 +1,33 @@
-.mn-button.action {
-  border-radius: 50%;
-  width: 3.5em;
-  height: 3.5em;
-  line-height: 3.5em;
-  position: relative;
+mn-button, .mn-button {
+  &.action {
+    border-radius: 50%;
+    width: 3.5em;
+    height: 3.5em;
+    line-height: 3.5em;
+    position: relative;
+    text-align: center;
 
-  * {line-height: inherit}
+    * {line-height: inherit}
 
-  &:not(:disabled):not(.raised):before {
-    content: '';
-    background-color: map-get($mn-primary-color, 200);
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%) scale(.3);
-    opacity: 0;
-    width: 100%; height: 100%;
-    border-radius: inherit;
-    transition: all .2s ease;
-  }
+    &:not(:disabled):not(.raised):before {
+      content: '';
+      background-color: map-get($mn-primary-color, 200);
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%) scale(.3);
+      opacity: 0;
+      width: 100%; height: 100%;
+      border-radius: inherit;
+      transition: all .2s ease;
+    }
 
-  &:hover:not(.raised), &:focus:not(.raised) {
-    background-color: transparent;
+    &:hover:not(.raised), &:focus:not(.raised) {
+      background-color: transparent;
 
-    &:before {
-      opacity: 1;
-      transform: translate(-50%, -50%) scale(1);
+      &:before {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+      }
     }
   }
 }

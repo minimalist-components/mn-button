@@ -1,11 +1,14 @@
-'use strict';
-
-let gulp = require('gulp');
-let config = require('./gulp.config.js');
-let options = config.browserSyncOptions;
+import gulp from 'gulp';
+import historyApi from 'connect-history-api-fallback';
+import gzip from 'compression';
+import {browserSync, browserSyncOptions as options} from './config.js';
 
 gulp.task('browser-sync', browserSyncTask);
 
 function browserSyncTask() {
-  config.browserSync.init(options);
+  options.middleware = [
+    historyApi(),
+    gzip(),
+  ],
+  browserSync.init(options);
 }

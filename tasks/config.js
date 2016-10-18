@@ -1,5 +1,3 @@
-'use strict';
-
 module.exports = {
   templates: {
     src: './sources/templates/*.jade',
@@ -11,6 +9,18 @@ module.exports = {
     dest: './dist/',
     sourcemaps: '/sources/styles',
   },
+  scripts: {
+    src: [
+      './sources/**/*.js',
+      '!./sources/**/*.spec.js',
+    ],
+    dest: './dist/',
+  },
+  lintScripts: [
+    './gulpfile.js',
+    './tasks/**/*.js',
+    './sources/**/*.js',
+  ],
   browserSync: require('browser-sync').create(),
   browserSyncOptions: {
     server: {
@@ -20,7 +30,6 @@ module.exports = {
       ],
     },
     notify: false,
-    middleware: [require('connect-history-api-fallback')()],
     reloadDelay: 100,
     open: false,
   },

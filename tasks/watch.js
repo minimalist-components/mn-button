@@ -1,15 +1,24 @@
-'use strict';
-
-let gulp = require('gulp');
-let gulpConfig = require('./gulp.config.js');
+import gulp from 'gulp';
+import {
+  templates,
+  scripts,
+  styles,
+  browserSync,
+} from './config.js';
 
 gulp.task('watch', watchTask);
 
 function watchTask() {
-  gulp.watch(gulpConfig.templates.src, [
+  gulp.watch(templates.src, [
     'templates',
-    gulpConfig.browserSync.reload,
+    browserSync.reload,
   ]);
 
-  gulp.watch(gulpConfig.styles.watch, ['styles']);
+  gulp.watch(scripts.src, [
+    'lint',
+    'scripts',
+    browserSync.reload,
+  ]);
+
+  gulp.watch(styles.watch, ['styles']);
 }
