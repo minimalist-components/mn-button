@@ -29,5 +29,11 @@
         transform: translate(-50%, -50%) scale(1);
       }
     }
+
+    &:active:not(.raised) {
+      &:before {
+        background-color: map-get($mn-primary-color, 100);
+      }
+    }
   }
 }

@@ -24,6 +24,10 @@
     background-color: map-get($mn-primary-color, 200);
   }
 
+  &:active:not(.raised) {
+    background-color: map-get($mn-primary-color, 100);
+  }
+
   &:disabled {
     background-color: map-get($mn-black-color, 100);
     box-shadow: none;
