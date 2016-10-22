@@ -23,6 +23,7 @@ Or just download the main file ```dist/mn-button.css``` in your project, and mak
 
 ```html
 <link rel="stylesheet" href="path/to/dist/mn-button.css">
+<script src="path/to/dist/mn-button.js">
 ```
 
 

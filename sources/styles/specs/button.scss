@@ -20,6 +20,8 @@
   position: relative;
   transform: translateZ(0);
 
+  * {pointer-events: none}
+
   &:hover:not(.raised), &:focus:not(.raised) {
     background-color: map-get($mn-primary-color, 200);
   }
