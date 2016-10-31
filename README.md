@@ -1,4 +1,6 @@
-# Minimalist button
+[![Bower version](https://badge.fury.io/bo/mn-button.svg)](https://badge.fury.io/bo/mn-button)
+
+# mn-button
 
 Buttons flat, raised, and action, with a minimalist design.
 
