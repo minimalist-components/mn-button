@@ -1,7 +1,7 @@
 {
   "name": "mn-button",
   "version": "0.0.4",
-  "description": "Minimalist button component, with just 1kb of css",
+  "description": "Button component (flat, raised, and icon)",
   "main": [
     "dist/mn-button.css",
     "sources/styles/mn-button.scss"
