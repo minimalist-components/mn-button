@@ -8,6 +8,7 @@ module.exports = {
     watch: './sources/styles/**/*.scss',
     dest: './dist/',
     sourcemaps: '/sources/styles',
+    output: 'mn-button.css',
   },
   scripts: {
     src: [
@@ -15,6 +16,7 @@ module.exports = {
       '!./sources/**/*.spec.js',
     ],
     dest: './dist/',
+    output: 'mn-button.js',
   },
   lintScripts: [
     './gulpfile.js',

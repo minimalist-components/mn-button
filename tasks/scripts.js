@@ -15,7 +15,7 @@ function scriptsTask() {
     .pipe(plumber({errorHandler}))
     .pipe(sourcemaps.init())
     .pipe(babel())
-    .pipe(concat('mn-button.js'))
+    .pipe(concat(scripts.output))
     .pipe(uglify({mangle: false}))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest(scripts.dest));
