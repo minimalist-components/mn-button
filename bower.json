@@ -1,10 +1,10 @@
 {
   "name": "mn-button",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Button component (flat, raised, and icon)",
   "main": [
     "dist/mn-button.css",
-    "sources/styles/mn-button.scss"
+    "dist/mn-button.js"
   ],
   "authors": [
     "Darlan Mendonça <darlanmendonca@gmail.com>"
