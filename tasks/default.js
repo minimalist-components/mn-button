@@ -1,4 +1,4 @@
-import gulp from 'gulp';
+import gulp from 'gulp'
 
 gulp.task('default', [
   'styles',
@@ -7,4 +7,4 @@ gulp.task('default', [
   'templates',
   'browser-sync',
   'watch',
-]);
+])

@@ -1,8 +1,8 @@
-document.addEventListener('click', blur);
+document.addEventListener('click', blur)
 
 function blur(e) {
-  const isMnButton = e.target.classList.contains('mn-button');
+  const isMnButton = e.target.classList.contains('mn-button')
   if (isMnButton) {
-    e.target.blur();
+    e.target.blur()
   }
 }

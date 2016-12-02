@@ -1,3 +1,5 @@
+import browserSync from 'browser-sync'
+
 module.exports = {
   templates: {
     src: './sources/templates/*.jade',
@@ -23,7 +25,7 @@ module.exports = {
     './tasks/**/*.js',
     './sources/**/*.js',
   ],
-  browserSync: require('browser-sync').create(),
+  browserSync: browserSync.create(),
   browserSyncOptions: {
     server: {
       baseDir: [
@@ -35,4 +37,4 @@ module.exports = {
     reloadDelay: 100,
     open: false,
   },
-};
+}

@@ -1,5 +1,5 @@
-let optional = 1;
-let required = 2;
+let optional = 1
+let required = 2
 
 module.exports = {
   parserOptions: {
@@ -14,7 +14,7 @@ module.exports = {
     customElements: true,
   },
   rules: {
-    semi: [required, 'always'],
+    semi: [required, 'never'],
     curly: [required, 'all'],
     'brace-style': [required, '1tbs'],
     quotes: [required, 'single'],
@@ -42,4 +42,4 @@ module.exports = {
     'keyword-spacing': required,
     'space-unary-ops': required,
   }
-};
+}
