@@ -10,6 +10,10 @@
 
     * {line-height: inherit}
 
+    &:disabled:not(.raised) {
+      background-color: transparent;
+    }
+
     &:not(:disabled):not(.raised):before {
       content: '';
       background-color: map-get($mn-primary-color, 200);
