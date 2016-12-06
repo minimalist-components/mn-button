@@ -1,6 +1,6 @@
 {
   "name": "mn-button",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Button component (flat, raised, and icon)",
   "main": [
     "dist/mn-button.css",
