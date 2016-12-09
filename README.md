@@ -15,8 +15,6 @@ See the [demo](https://codepen.io/darlanmendonca/full/vKqLOx)
 
 ### Install
 
-With bower
-
 ```sh
 bower install --save mn-button
 ```
