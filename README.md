@@ -21,12 +21,7 @@ With bower
 bower install --save mn-button
 ```
 
-Or just download the main file ```dist/mn-button.css``` in your project, and make a reference to their, like:
-
-```html
-<link rel="stylesheet" href="path/to/dist/mn-button.css">
-<script src="path/to/dist/mn-button.js">
-```
+Or just download the main files, located in [dist/](https://github.com/minimalist-components/mn-button/tree/master/dist)
 
 
 ### Usage
