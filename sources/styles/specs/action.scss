@@ -1,13 +1,19 @@
 .mn-button {
   &.action {
     border-radius: 50%;
-    width: 3.5em;
-    height: 3.5em;
-    flex: 0 0 3.5em;
+    width: 2em;
+    height: 2em;
+    flex: 0 0 2em;
     line-height: 100%;
     position: relative;
     text-align: center;
     padding: 0;
+
+    &.raised {
+      width: 3.5em;
+      height: 3.5em;
+      flex: 0 0 3.5em;
+    }
 
     * {line-height: inherit}
 
