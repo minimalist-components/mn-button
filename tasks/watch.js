@@ -20,5 +20,5 @@ function watchTask() {
     browserSync.reload,
   ])
 
-  gulp.watch(styles.watch, ['styles'])
+  gulp.watch(styles.watch, ['styles', 'templates', browserSync.reload])
 }
