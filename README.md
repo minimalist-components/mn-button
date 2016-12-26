@@ -6,9 +6,9 @@
 
 Buttons flat, raised, and action, with a minimalist design.
 
-See the [demo](https://codepen.io/darlanmendonca/full/vKqLOx)
+See the [demo](https://minimalist-components.github.io/mn-button/)
 
-<a href="http://codepen.io/darlanmendonca/full/vKqLOx">
+<a href="https://minimalist-components.github.io/mn-button/">
 <img src="https://raw.githubusercontent.com/minimalist-components/mn-button/master/preview.gif">
 </a>
 
