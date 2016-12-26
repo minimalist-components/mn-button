@@ -1,6 +1,6 @@
 {
   "name": "mn-button",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Button component (flat, raised, and icon)",
   "main": [
     "dist/mn-button.css",
@@ -12,9 +12,9 @@
   "license": "MIT",
   "homepage": "",
   "dependencies": {
-    "mn-palette-color": "^0.0.1"
+    "mn-palette-color": "0.0.1"
   },
   "devDependencies": {
-    "mn-layout": "^0.0.9"
+    "mn-layout": "0.0.10"
   }
 }
