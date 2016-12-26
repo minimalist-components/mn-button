@@ -1,7 +1,9 @@
 html
   meta(name='viewport' content='width=device-width, user-scalable=no')
+  base(href='/')
   link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css')
   link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans')
+  link(rel='stylesheet' href='vendor.css')
   link(rel='stylesheet' href='mn-button.css')
   style.
     body {
@@ -9,7 +11,10 @@ html
       -webkit-font-smoothing: antialiased;
     }
 
-body
+    .blue {background: #2196F3; color: white}
+    .red {background: #E91E63; color: white}
+
+//- body
   h1 mn-button
 
   h2 .mn-button
@@ -41,5 +46,20 @@ body
     button.mn-button.raised.action: span.zmdi.zmdi-plus.zmdi-hc-2x
     button.mn-button.raised.action: span.zmdi.zmdi-edit
     button.mn-button.raised.action(disabled): span.zmdi.zmdi-delete
+
+body
+  //- h1 mn-button
+
+  .layout-fullscreen.layout-centered    
+    div.layout-column.layout-sm-row
+      button.mn-button flat button
+
+      button.mn-button.raised raised button
+
+      button.mn-button.raised.blue raised button with color
+      button.mn-button.action: .zmdi.zmdi-plus
+
+      button.mn-button.raised.action: .zmdi.zmdi-edit
+      button.mn-button.raised.action.red: .zmdi.zmdi-delete
   
   script(src='mn-button.js')

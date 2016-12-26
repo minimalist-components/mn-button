@@ -13,5 +13,8 @@
   "homepage": "",
   "dependencies": {
     "mn-palette-color": "^0.0.1"
+  },
+  "devDependencies": {
+    "mn-layout": "^0.0.9"
   }
 }
