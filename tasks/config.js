@@ -3,7 +3,7 @@ import browserSync from 'browser-sync'
 module.exports = {
   templates: {
     src: './sources/templates/*.jade',
-    dest: './public/',
+    dest: './docs/',
   },
   styles: {
     src: './sources/styles/*.scss',
@@ -29,7 +29,7 @@ module.exports = {
   browserSyncOptions: {
     server: {
       baseDir: [
-        './public',
+        './docs',
         './dist',
       ],
     },
