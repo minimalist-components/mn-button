@@ -4,7 +4,8 @@ html
   link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css')
   link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans')
   link(rel='stylesheet' href='vendor.css')
-  link(rel='stylesheet' href='mn-button.css')
+  style
+    include ../../dist/mn-button.css
   style.
     body {
       font-family: 'Open Sans', sans-serif;
@@ -62,4 +63,5 @@ body
       button.mn-button.raised.action: .zmdi.zmdi-edit
       button.mn-button.raised.action.red: .zmdi.zmdi-delete
   
-  script(src='mn-button.js')
+  script
+    include ../../dist/mn-button.js
