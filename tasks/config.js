@@ -2,7 +2,7 @@ import browserSync from 'browser-sync'
 
 module.exports = {
   templates: {
-    src: './sources/templates/*.jade',
+    src: './sources/templates/index.jade',
     dest: './docs/',
   },
   styles: {

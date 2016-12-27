@@ -8,9 +8,17 @@ html
     include ../../dist/mn-button.css
   style.
     html {background-color: rgb(241, 243, 245)}
+    h2 {
+      font-weight: normal;
+      position: absolute;
+      top: 0;
+      left: 8px;
+    }
+
     body {
       font-family: 'Open Sans', sans-serif;
       -webkit-font-smoothing: antialiased;
+      margin: 0;
     }
 
     .mn-button.raised {background-color: white}
@@ -18,53 +26,65 @@ html
     .mn-button.blue {background: rgb(50,154,240); color: white}
     .mn-button.red {background: rgb(240,62,62); color: white}
 
-//- body
-  h1 mn-button
+    .github-corner {
+      z-index: 10;
+      position: absolute;
+      top: 0;
+      right: 0;
+      zoom: 1.25;
+    }
 
-  h2 .mn-button
-  div
-    button.mn-button flat button
-    a.mn-button(href='#') flat button
-    button.mn-button flat button
-    button.mn-button flat button
-    button.mn-button flat button
-    button.mn-button flat button
-    button.mn-button(disabled) flat button disabled
+    .github-corner path {fill: rgb(134, 142,150)}
 
-  h2 .mn-button.raised
-  div
-    button.mn-button.raised raised button
-    a.mn-button.raised(href='#') raised button
-    button.mn-button.raised(disabled) raised button disabled
+    .github-corner .octo-body, 
+    .github-corner .octo-arm {
+      fill: rgb(241, 243, 245);
+    }
 
-  h2 .mn-button.action
-  div
-    button.mn-button.action: span.zmdi.zmdi-plus
-    button.mn-button.action: span.zmdi.zmdi-plus.zmdi-hc-2x
-    button.mn-button.action: span.zmdi.zmdi-edit
-    button.mn-button.action(disabled): span.zmdi.zmdi-delete
+    .github-corner:hover .octo-arm{
+      animation: octocat-wave 560ms ease-in-out;
+    }
 
-  h2 .mn-button.raised.action
-  div
-    button.mn-button.raised.action: span.zmdi.zmdi-plus
-    button.mn-button.raised.action: span.zmdi.zmdi-plus.zmdi-hc-2x
-    button.mn-button.raised.action: span.zmdi.zmdi-edit
-    button.mn-button.raised.action(disabled): span.zmdi.zmdi-delete
+    @media (max-width: 500px) {
+      .github-corner:hover .octo-arm {
+        animation: none;
+      }
+
+      .github-corner .octo-arm {
+        animation: octocat-wave 560ms ease-in-out;
+      }
+    }
+
+    @-webkit-keyframes octocat-wave{
+      0%,100%{transform: rotate(0)}
+      20%,60%{transform: rotate(-25deg)}
+      40%,80%{transform: rotate(10deg)}
+    }
 
 body
-  //- h1 mn-button
+  h2 mn-button
+
+  include github-corner
 
   .layout-fullscreen.layout-centered    
     div.layout-container.layout-column.layout-sm-row.align-center
       button.mn-button flat button
-
       button.mn-button.raised raised button
-
       button.mn-button.raised.blue raised button with color
-      button.mn-button.action: .zmdi.zmdi-plus
 
-      button.mn-button.raised.action: .zmdi.zmdi-edit
-      button.mn-button.raised.action.red: .zmdi.zmdi-delete
+      div.layout-row.align-center
+        button.mn-button.action: .zmdi.zmdi-plus
+        button.mn-button.raised.action: .zmdi.zmdi-edit
+        button.mn-button.raised.action.red: .zmdi.zmdi-delete
+
+  //- .layout-container
+    mn-code.sh bower install --save mn-button
+
+    p in your html, you can use the class ```.mn-button``` in buttons or anchor tags, i.e.
+
+    mn-code.html
+      <button class="mn-button">Simple button</button>
+      <a href="#" class="mn-button">Other Simple button<a>
   
   script
     include ../../dist/mn-button.js
