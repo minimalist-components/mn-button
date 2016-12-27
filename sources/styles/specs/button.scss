@@ -23,17 +23,17 @@
   * {pointer-events: none}
 
   &:hover:not(.raised), &:focus:not(.raised) {
-    background-color: map-get($mn-primary-color, 200);
+    background-color: $oc-gray-5;
   }
 
   &:active:not(.raised) {
-    background-color: map-get($mn-primary-color, 100);
+    background-color: $oc-gray-4;
   }
 
   &:disabled {
-    background-color: map-get($mn-black-color, 100);
+    background-color: $oc-gray-1;
     box-shadow: none;
-    color: map-get($mn-black-color, 300);
+    color: $oc-gray-5;
     pointer-events: none;
   }
 }

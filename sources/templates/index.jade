@@ -21,6 +21,8 @@ html
       margin: 0;
     }
 
+    .mn-button {font-size: 1em}
+
     .mn-button.raised {background-color: white}
 
     .mn-button.blue {background: rgb(50,154,240); color: white}
@@ -73,6 +75,7 @@ body
       button.mn-button.raised.blue raised button with color
 
       div.layout-row.align-center
+        button.mn-button.action(disabled): .zmdi.zmdi-plus
         button.mn-button.action: .zmdi.zmdi-plus
         button.mn-button.raised.action: .zmdi.zmdi-edit
         button.mn-button.raised.action.red: .zmdi.zmdi-delete
