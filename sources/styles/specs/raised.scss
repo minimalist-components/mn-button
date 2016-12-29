@@ -2,18 +2,20 @@
   margin: .4em;
 
   &.raised {
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+    box-shadow: 0 2px 5px 0 $oc-gray-4;
 
     &:hover, &:focus {
-      box-shadow: 0 4px 8px 0 rgba(0,0,0,.4);
+      box-shadow: 0 4px 8px 0 $oc-gray-5;
     }
 
     &:active {
-      box-shadow: 0 2px 6px 0 rgba(0,0,0,.26);
+      box-shadow: 0 2px 6px 0 $oc-gray-4;
     }
 
     &:disabled {
       box-shadow: none;
+      opacity: .8;
+      filter: grayscale(.2);
     }
   }
 }

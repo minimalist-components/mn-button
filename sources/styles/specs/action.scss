@@ -23,8 +23,9 @@
 
     &:not(:disabled):not(.raised):before {
       content: '';
-      background-color: map-get($mn-primary-color, 200);
+      background-color: $oc-gray-4;
       position: absolute;
+      z-index: -1;
       top: 50%; left: 50%;
       transform: translate(-50%, -50%) scale(.7);
       opacity: 0;
@@ -44,7 +45,7 @@
 
     &:active:not(.raised) {
       &:before {
-        background-color: map-get($mn-primary-color, 100);
+        background-color: $oc-gray-3;
       }
     }
   }
