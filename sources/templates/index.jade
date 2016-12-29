@@ -5,7 +5,8 @@ html
   link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans')
   style
     include ../../docs/vendor.css
-  link(rel='stylesheet' href='mn-button.css')
+    include ../../dist/mn-button.css
+  //- link(rel='stylesheet' href='mn-button.css')
   style.
     .mn-button.raised {background-color: white}
     .mn-button.blue {background: rgb(50,154,240); color: white}
@@ -38,4 +39,5 @@ body
   
   script
     include ../../public/scripts/vendor.js
-  script(src='mn-button.js')
+    include ../../dist/mn-button.js
+  //- script(src='mn-button.js')
