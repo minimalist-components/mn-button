@@ -15,7 +15,6 @@
     "open-color": "^1.4.1"
   },
   "devDependencies": {
-    "mn-layout": "0.0.13",
-    "mn-gh-page": "^0.0.1"
+    "mn-gh-page": "^0.0.5"
   }
 }
