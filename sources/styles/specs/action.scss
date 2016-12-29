@@ -9,6 +9,11 @@
     text-align: center;
     padding: 0;
 
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+
     &.raised {
       width: 3.5em;
       height: 3.5em;

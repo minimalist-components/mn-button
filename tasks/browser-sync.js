@@ -9,6 +9,7 @@ function browserSyncTask() {
   options.middleware = [
     historyApi(),
     gzip(),
-  ],
+  ]
+
   browserSync.init(options)
 }
