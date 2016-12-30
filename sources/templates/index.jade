@@ -11,6 +11,8 @@ html
     .mn-button.raised {background-color: white}
     .mn-button.blue {background: rgb(50,154,240); color: white}
     .mn-button.red {background: rgb(240,62,62); color: white}
+    .docs h3 + .mn-button {margin-left: 0}
+    .docs h3 {margin-top: 100px}
 
 body
   h2 mn-button
@@ -40,7 +42,6 @@ body
 
     mn-code.html.
       <button class="mn-button">Simple button</button>
-
       <a href="#" class="mn-button">Other Simple button</a>
 
     p.
@@ -50,21 +51,24 @@ body
       li .raised - to make a button with 3d depth
       li .action - to make rounded buttons, with an icon replacement the text
 
-
-    p Raised button example
+    h3 raised button
+    button.mn-button.raised raised button
+    button.mn-button.raised.blue raised button with color
     mn-code.html.
       <button class="mn-button raised">Raised button</button>
-
-
-    p Action button examples
-
+    
+    h3 Action button
+    button.mn-button.action: .zmdi.zmdi-plus
+    button.mn-button.action: .zmdi.zmdi-edit
     mn-code.html.
       <button class="mn-button action"><!-- icon here --></button>
 
-    p Action and raised button example
-
+    h3 Action and raised button
+    button.mn-button.raised.action: .zmdi.zmdi-edit
+    button.mn-button.raised.action.red: .zmdi.zmdi-delete
     mn-code.html.
-      <button class="mn-button action raised">&#9830;</button>
+      <button class="mn-button action raised"><!-- icon here --></button>
+
   script(src='vendor.js')
   script
     include ../../dist/mn-button.js
