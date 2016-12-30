@@ -3,11 +3,9 @@ html
   base(href='/')
   link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css')
 
-  link(rel='stylesheet' href='/vendor.css')
-  style
-    //- include ../../docs/vendor.css
-    include ../../dist/mn-button.css
-  //- link(rel='stylesheet' href='mn-button.css')
+  link(rel='stylesheet' href='docs/vendor.css')
+  link(rel='stylesheet' href='dist/mn-button.css')
+    
   style.
     .mn-button.raised {background-color: white}
     .docs h3 + .mn-button {margin-left: 0}
@@ -75,7 +73,5 @@ body
     mn-code.html.
       <button class="mn-button action raised"><!-- icon here --></button>
 
-  script(src='/vendor.js')
-  script
-    include ../../dist/mn-button.js
-  //- script(src='mn-button.js')
+  script(src='docs/vendor.js')
+  script(src='dist/mn-button.js')

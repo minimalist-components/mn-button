@@ -30,7 +30,7 @@ module.exports = {
     server: {
       baseDir: [
         './docs',
-        './dist',
+        '.',
       ],
     },
     notify: false,
