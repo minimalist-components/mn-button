@@ -2,9 +2,10 @@ html
   meta(name='viewport' content='width=device-width, user-scalable=no')
   base(href='/')
   link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css')
-  link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans')
+
+  link(rel='stylesheet' href='/vendor.css')
   style
-    include ../../docs/vendor.css
+    //- include ../../docs/vendor.css
     include ../../dist/mn-button.css
   //- link(rel='stylesheet' href='mn-button.css')
   style.
@@ -74,8 +75,7 @@ body
     mn-code.html.
       <button class="mn-button action raised"><!-- icon here --></button>
 
-  script(src='vendor.js')
+  script(src='/vendor.js')
   script
-    //- include ../../docs/vendor.js
     include ../../dist/mn-button.js
   //- script(src='mn-button.js')
