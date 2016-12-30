@@ -29,7 +29,7 @@ And then, in your html, you can use the class ```.mn-button``` in buttons or anc
 ```html
 <button class="mn-button">Simple button</button>
 
-<a href="#" class="mn-button">Other Simple button<a>
+<a href="#" class="mn-button">Other Simple button</a>
 ```
 
 You can use the class .mn-button with others class, .raised, and .action.

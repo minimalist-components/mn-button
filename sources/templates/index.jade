@@ -28,16 +28,44 @@ body
         button.mn-button.raised.action: .zmdi.zmdi-edit
         button.mn-button.raised.action.red: .zmdi.zmdi-delete
 
-  //- .layout-container
-    mn-code.sh bower install --save mn-button
+  .docs.layout-container
+    mn-code.sh.
+      # to install this module
+      bower install --save mn-button
 
-    p in your html, you can use the class ```.mn-button``` in buttons or anchor tags, i.e.
+    p Or just download the main files, located in dist/
 
-    mn-code.html
+    h3 usage
+    p In your html, you can use the class <b>.mn-button</b> in buttons or anchor tags, i.e.
+
+    mn-code.html.
       <button class="mn-button">Simple button</button>
-      <a href="#" class="mn-button">Other Simple button<a>
-  
+
+      <a href="#" class="mn-button">Other Simple button</a>
+
+    p.
+      You can use the class <strong>.mn-button</strong> with others class, <strong>.raised</strong>, and <strong>.action</strong>.
+    
+    ul
+      li .raised - to make a button with 3d depth
+      li .action - to make rounded buttons, with an icon replacement the text
+
+
+    p Raised button example
+    mn-code.html.
+      <button class="mn-button raised">Raised button</button>
+
+
+    p Action button examples
+
+    mn-code.html.
+      <button class="mn-button action"><!-- icon here --></button>
+
+    p Action and raised button example
+
+    mn-code.html.
+      <button class="mn-button action raised">&#9830;</button>
+  script(src='vendor.js')
   script
-    include ../../public/scripts/vendor.js
     include ../../dist/mn-button.js
   //- script(src='mn-button.js')

@@ -10,9 +10,16 @@ function vendorJSTask() {
     .ext('js')
     .files
 
+  const devDependencies = bowerFiles()
+    .ext('js')
+    .dev()
+    .files
+
+  dependencies = dependencies.concat(devDependencies)
+
   return gulp
     .src(dependencies)
     .pipe(concat('vendor.js'))
     .pipe(uglify())
-    .pipe(gulp.dest('./public/scripts'))
+    .pipe(gulp.dest('./docs'))
 }
