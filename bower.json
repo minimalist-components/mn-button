@@ -1,6 +1,6 @@
 {
   "name": "mn-button",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Button component (flat, raised, and icon)",
   "main": [
     "dist/mn-button.css",
@@ -15,6 +15,6 @@
     "open-color": "^1.4.1"
   },
   "devDependencies": {
-    "mn-gh-page": "^0.0.6"
+    "mn-gh-page": "0.0.8"
   }
 }

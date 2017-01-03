@@ -13,6 +13,7 @@
   margin: .1rem;
   transition: all .2s ease;
   user-select: none;
+  -webkit-tap-highlight-color: transparent;
 
   padding: .5em .8em;
   border: 0;
@@ -22,7 +23,8 @@
 
   * {pointer-events: none}
 
-  &:hover:not(.raised), &:focus:not(.raised) {
+  &:hover:not(.raised),
+  &:focus:not(.raised) {
     background-color: $oc-gray-5;
   }
 
