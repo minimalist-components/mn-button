@@ -4,6 +4,7 @@
   "version": "0.0.9",
   "description": "",
   "scripts": {
+    "start": "scripts/start.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
