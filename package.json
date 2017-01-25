@@ -1,15 +1,22 @@
 {
   "name": "mn-button",
-  "private": true,
-  "version": "0.0.11",
-  "description": "",
+  "version": "0.0.1",
+  "description": "minimalist buttons (flat, raised, and icon)",
   "scripts": {
     "start": "scripts/start.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "Darlan Mendonça <darlanmendonca@gmail.com>",
+  "keywords": [
+    "button",
+    "flat",
+    "minimalist"
+  ],
+  "author": "Darlan Mendonça <darlanmendonca@gmail.com> (https://github.com/darlanmendonca)",
+  "homepage": "https://github.com/minimalist-components/mn-button",
   "license": "MIT",
+  "dependencies": {
+    "open-color": "^1.4.2"
+  },
   "devDependencies": {
     "babel-preset-es2015": "^6.16.0",
     "bower-files": "^3.13.3",

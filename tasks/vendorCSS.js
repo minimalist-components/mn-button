@@ -1,6 +1,6 @@
 import gulp from 'gulp'
 import bowerFiles from 'bower-files'
-// import minifyCss from 'gulp-minify-css'
+import minifyCss from 'gulp-minify-css'
 import concat from 'gulp-concat'
 
 gulp.task('vendorCSS', vendorCSSTask)
@@ -8,6 +8,7 @@ gulp.task('vendorCSS', vendorCSSTask)
 function vendorCSSTask() {
   let dependencies = bowerFiles()
     .ext('css')
+    .match('!**/open-color.css')
     .files
 
   const devDependencies = bowerFiles()
@@ -20,6 +21,6 @@ function vendorCSSTask() {
   return gulp
     .src(dependencies)
     .pipe(concat('vendor.css'))
-    // .pipe(minifyCss({keepSpecialComments: 0}))
+    .pipe(minifyCss({keepSpecialComments: 0}))
     .pipe(gulp.dest('./docs'))
 }
