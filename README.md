@@ -16,7 +16,7 @@ See the [demo](https://minimalist-components.github.io/mn-button/)
 ### Install
 
 ```sh
-bower install --save mn-button
+npm install --save mn-button
 ```
 
 Or just download the main files, located in [dist/](https://github.com/minimalist-components/mn-button/tree/master/dist)
