@@ -20,7 +20,7 @@ See the [demo](https://minimalist-components.github.io/mn-button/)
 npm install --save mn-button
 ```
 
-Or just download the main files, located in [dist/](https://github.com/minimalist-components/mn-button/tree/master/dist)
+And bundle dependencies and main files in [dist/](https://github.com/minimalist-components/mn-button/tree/master/dist) with your preferred tool.
 
 
 ### Usage
