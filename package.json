@@ -4,6 +4,7 @@
   "description": "minimalist buttons (flat, raised, and icon)",
   "scripts": {
     "start": "scripts/start.sh",
+    "bundle": "scripts/bundle.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -13,9 +14,7 @@
   ],
   "author": "Darlan Mendonça <darlanmendonca@gmail.com> (https://github.com/darlanmendonca)",
   "main": "dist/mn-button.js",
-  "files": [
-    "dist/mn-button.css"
-  ],
+  "files": ["dist"],
   "repository": {
     "type": "git",
     "url": "https://github.com/minimalist-components/mn-button.git"
@@ -30,7 +29,6 @@
   },
   "devDependencies": {
     "babel-preset-es2015": "^6.16.0",
-    "bower-files": "^3.13.3",
     "browser-sync": "^2.14.0",
     "compression": "^1.6.2",
     "connect-history-api-fallback": "^1.3.0",
@@ -47,6 +45,8 @@
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.4.0",
     "gulp-uglify": "^2.0.0",
+    "mn-gh-page": "git+https://github.com/minimalist-components/gh-page.git",
+    "package-files": "^0.0.4",
     "require-all": "^2.0.0"
   }
 }

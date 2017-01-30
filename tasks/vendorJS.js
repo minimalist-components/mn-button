@@ -1,21 +1,19 @@
 import gulp from 'gulp'
-import bowerFiles from 'bower-files'
+import packageFiles from 'package-files'
 import concat from 'gulp-concat'
 import uglify from 'gulp-uglify'
 
 gulp.task('vendorJS', vendorJSTask)
 
 function vendorJSTask() {
-  let dependencies = bowerFiles()
-    .ext('js')
-    .files
-
-  const devDependencies = bowerFiles()
-    .ext('js')
-    .dev()
-    .files
-
-  dependencies = dependencies.concat(devDependencies)
+  const devDependencies = ['mn-gh-page']
+  const dependencies = packageFiles(devDependencies)
+    .filter(dep => dep.endsWith('.js'))
+    .map(item =>
+      item.includes('document-register-element')
+        ? item.replace('.node.js', '.js')
+        : item
+    )
 
   return gulp
     .src(dependencies)
