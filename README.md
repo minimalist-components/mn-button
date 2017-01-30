@@ -47,24 +47,13 @@ Raised button example
 Action button examples
 
 ```html
-<button class="mn-button action">&#9830;</button>
+<button class="mn-button action"><<!-- icon here --></button>
 ```
 
 Action and raised button example
 
 ```html
-<button class="mn-button action raised">&#9830;</button>
-```
-
-### Icons
-I use in the [demo](https://codepen.io/darlanmendonca/pen/vKqLOx) as example, the zmdi icons, their following material design specs. But you can use what icons you wish.
-
-The following code is valid
-
-```html
-<button class="mn-button action raised">
-  <span class="zmdi zmdi-edit"></span>
-</button>
+<button class="mn-button action raised"><<!-- icon here --></button>
 ```
 
 
