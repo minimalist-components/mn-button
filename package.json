@@ -1,6 +1,6 @@
 {
   "name": "mn-button",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "minimalist buttons (flat, raised, and icon)",
   "scripts": {
     "start": "scripts/start.sh",
@@ -12,6 +12,10 @@
     "minimalist"
   ],
   "author": "Darlan Mendonça <darlanmendonca@gmail.com> (https://github.com/darlanmendonca)",
+  "main": "dist/mn-button.js",
+  "files": [
+    "dist/mn-button.css"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/minimalist-components/mn-button.git"
