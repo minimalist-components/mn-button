@@ -17,6 +17,7 @@ See the [demo](https://minimalist-components.github.io/mn-button/)
 ### Install
 
 ```sh
+# to installt this module
 npm install --save mn-button
 ```
 
