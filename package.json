@@ -48,7 +48,7 @@
     "gulp-sourcemaps": "^2.4.0",
     "gulp-uglify": "^2.0.0",
     "mn-gh-page": "git+https://github.com/minimalist-components/gh-page.git",
-    "package-files": "^0.0.4",
+    "package-files": "^0.0.5",
     "require-all": "^2.0.0"
   }
 }
