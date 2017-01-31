@@ -1,6 +1,6 @@
 import gulp from 'gulp'
 import packageFiles from 'package-files'
-import minifyCss from 'gulp-minify-css'
+import minifyCss from 'gulp-clean-css'
 import concat from 'gulp-concat'
 
 gulp.task('vendorCSS', vendorCSSTask)
