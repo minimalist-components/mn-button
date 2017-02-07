@@ -4,7 +4,10 @@ const buttons = document.querySelectorAll('button.mn-button')
 Array
   .from(buttons)
   .forEach(button => {
-    if (button.closest('form') && !button.getAttribute('type')) {
+    const buttonInsideAForm = button.closest('form')
+    const hasAttributeType = !button.getAttribute('type')
+
+    if (buttonInsideAForm && hasAttributeType) {
       button.setAttribute('type', 'button')
     }
   })
