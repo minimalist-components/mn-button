@@ -25,11 +25,11 @@
 
   &:hover:not(.raised),
   &:focus:not(.raised) {
-    background-color: $oc-gray-5;
+    background-color: $oc-gray-4;
   }
 
   &:active:not(.raised) {
-    background-color: $oc-gray-4;
+    background-color: $oc-gray-3;
   }
 
   &:disabled {
