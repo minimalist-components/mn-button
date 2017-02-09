@@ -1,6 +1,6 @@
 {
   "name": "mn-button",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "minimalist buttons (flat, raised, and icon)",
   "scripts": {
     "start": "scripts/start.sh",
