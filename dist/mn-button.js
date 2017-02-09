@@ -1,2 +1,2 @@
-"use strict";function blur(event){var isMnButton=event.target.classList.contains("mn-button");isMnButton&&event.target.blur()}document.addEventListener("click",blur);
+"use strict";function blur(event){var isMnButton=event.target.classList.contains("mn-button");isMnButton&&event.target.blur()}document.addEventListener("click",blur);var buttons=document.querySelectorAll("button.mn-button");Array.from(buttons).forEach(function(button){button.closest("form")&&!button.getAttribute("type")&&button.setAttribute("type","button")});
 //# sourceMappingURL=mn-button.js.map
