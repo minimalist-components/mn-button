@@ -57,6 +57,9 @@ Action and raised button example
 <button class="mn-button action raised"><<!-- icon here --></button>
 ```
 
+### Note
+Sometimes you use tag `<button>` inside a form without apply an attribute type. By default, browsers set the type for buttons inside a form as `submit`.
+This compinent override that tags buttons inside a form, without an attribute type, will be setted to `button` instead `submit`.
 
 
 
