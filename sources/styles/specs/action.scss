@@ -21,7 +21,7 @@
 
     * {line-height: inherit}
 
-    &:disabled:not(.raised) {
+    &:disabled:not(.raised), &[readonly]:not(.raised) {
       background-color: transparent;
     }
 
