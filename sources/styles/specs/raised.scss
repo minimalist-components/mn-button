@@ -12,7 +12,7 @@
       box-shadow: 0 2px 6px 0 $oc-gray-4;
     }
 
-    &:disabled {
+    &:disabled, &[readonly] {
       box-shadow: none;
       opacity: .8;
       filter: grayscale(.2);

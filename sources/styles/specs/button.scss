@@ -32,7 +32,7 @@
     background-color: $oc-gray-3;
   }
 
-  &:disabled {
+  &:disabled, &[readonly] {
     background-color: $oc-gray-1;
     box-shadow: none;
     color: $oc-gray-5;
