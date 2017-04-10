@@ -31,11 +31,13 @@
   &:active:not(.raised) {
     background-color: $oc-gray-3;
   }
+}
 
-  &:disabled, &[readonly] {
-    background-color: $oc-gray-1;
-    box-shadow: none;
-    color: $oc-gray-5;
-    pointer-events: none;
-  }
+[disabled] .mn-button,
+[readonly] .mn-button,
+.mn-button:disabled, .mn-button[readonly] {
+  background-color: $oc-gray-1;
+  box-shadow: none;
+  color: $oc-gray-5;
+  pointer-events: none;
 }
