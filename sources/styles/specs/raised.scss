@@ -14,8 +14,8 @@
   }
 }
 
-[disabled] .mn-button.raised,
-[readonly] .mn-button.raised,
+[disabled] button.mn-button.raised,
+[readonly] button.mn-button.raised,
 .mn-button.raised:disabled, .mn-button.raised[readonly] {
   box-shadow: none;
   opacity: .8;

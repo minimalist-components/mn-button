@@ -33,8 +33,8 @@
   }
 }
 
-[disabled] .mn-button,
-[readonly] .mn-button,
+[disabled] button.mn-button,
+[readonly] button.mn-button,
 .mn-button:disabled, .mn-button[readonly] {
   background-color: $oc-gray-1;
   box-shadow: none;
